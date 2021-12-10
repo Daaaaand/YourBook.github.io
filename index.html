@@ -11,27 +11,45 @@
 </head>
 
 <body> <!-- NAVEGACIONS-->
+    <!--lOGO-->
     <div class="header">
         <header>
             <div class="grid__nav">
-                <nav class="nav">
-                    <a href="index.html">
-                        <img class="header__logo" src="fotos/logo.jpg" alt="Logotipo">
-                    </a>
-                    <ul>
-                        <a href="index.html" class="nav__inicio">Inicio</a>
-                        <input type="search" class="nav__search">
-                        <button class="nav__button"> <a href="busqueda.html"> Buscar</a></button>
-                        <li><a href="Perfil.html" class="nav__perfil">Perfil</a></li>
+                <nav class="nav navbar navbar-expand-sm" style="background-color: #800040;">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html" >
+                            <img class="header__logo" src="fotos/logo.jpg" alt="Logotipo">
+                        </a>
+                        <!--lOGO-->
                         <ul>
-                            <div class="nav__opciones">                       
-                                <li class="nav__li-Editar"><a href="Editar perfil.html">Editar perfil</a></li>
-                                <li class="nav__li-Cerrar"><p class="nav_p">Cerrar sesion</p></li>
-                                <li class="nav__li-Contacto"><a href="Contacto.html">Contacto</a></li>
-                                <li class="nav__li-Nosotros"><a href="Nosotros.html">Nosotros</a></li>
-                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link nav__inicio" href="index.html">Inicio</a>
+                            </li>
+                            <!--Buscar-->
+                            <nav class="navbar navbar-light bg-light">
+                                <div class="container-fluid">
+                                <form class="d-flex">
+                                    <input class="form-control me-2 nav__search" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success nav__button" type="submit" href="busqueda.html">Search</button>
+                                </form>
+                                </div>
+                            </nav>
+                            <!--Buscar-->
+                            <!--Opciones-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle nav__perfil" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Perfil
+                                </a>
+                                    <ul class="dropdown-menu nav__opciones" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item nav__li-Nosotros" href="Editar perfil.html">Editar perfil</a></li>
+                                        <li><a class="dropdown-item nav__li-Nosotros" href="#">Cerrar sesion</a></li>
+                                        <li><a class="dropdown-item nav__li-Nosotros" href="Contacto.html">Contacto</a></li>
+                                        <li><a class="dropdown-item nav__li-Nosotros" href="Nosotros.html">Nosotros</a></li>
+                                </div>
+                            </li>
+                            <!--Opciones-->
                         </ul>
-                    </ul>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -44,17 +62,18 @@
         <p class="ver">Ver</p>
         <img class="img__puntos" src="fotos/points.png" alt="Tres puntos" >
         <img class="img__libreria" src="fotos/libreria.jpg"  alt="Libreria_Animacion">
-
         <img class="img__perfil2" src="fotos/perfil.png" alt="Foto de perfil" >
         <p class="username2">Username</p>
         <p class="ver2">Ver</p>
         <img class="img__puntos2" src="fotos/points.png" alt="Tres puntos" >
         <img class="img__libreria2" src="fotos/libreria.jpg"  alt="Libreria_Animacion">
-
     </div>
+
     <footer>
         Todos los derechos reservados.
     </footer>
-</body>
 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
 </html>
